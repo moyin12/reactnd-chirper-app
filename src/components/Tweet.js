@@ -9,7 +9,6 @@ import { handleToggleTweet } from '../actions/tweets'
 class Tweet extends Component {
     handleLike = (e) => {
         e.preventDefault()
-        //handle when the like button is clicked
 
         const {dispatch, tweet, authedUser} = this.props
         dispatch(handleToggleTweet({
